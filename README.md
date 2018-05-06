@@ -63,20 +63,20 @@ VM2 должна иметь 2 сетевых интерфейса:
     4. В конечном результате после запуска скрипта необходимо обеспечить приведенную ниже иерархию файлов (допускается как генерация файлов скриптом, так и редактирование уже существующих в репозитории файлов; допускается наличие любых дополнительных файлов и директорий):
 
 
-**WORKDIR**			# script working directory
-├── config			# parameters file
-├── **config-drives**		# directory for config drives
-│   ├── vm1-config		# source files for vm1 cfg drive
-│   │   ├── meta-data		# meta-data file
-│   │   └── user-data		# user-data script
-│   └── vm2-config		# source files for vm2 cfg drive
-│       ├── meta-data		# meta-data file
-│       └── user-data		# user-data script
-├── task10_12_1.sh		# main script file
-└── **networks**		# directory for libvirt network XMLs
-	├── external.xml	# external net XML definition
-	├── internal.xml	# internal net XML definition
-	└── management.xml	# management net XML definition
+	**WORKDIR**			# script working directory
+	├── config			# parameters file
+	├── **config-drives**		# directory for config drives
+	│   ├── vm1-config		# source files for vm1 cfg drive
+	│   │   ├── meta-data		# meta-data file
+	│   │   └── user-data		# user-data script
+	│   └── vm2-config		# source files for vm2 cfg drive
+	│       ├── meta-data		# meta-data file
+	│       └── user-data		# user-data script
+	├── task10_12_1.sh		# main script file
+	└── **networks**		# directory for libvirt network XMLs
+		├── external.xml	# external net XML definition
+		├── internal.xml	# internal net XML definition
+		└── management.xml	# management net XML definition
 
 Пример файла config:
 
